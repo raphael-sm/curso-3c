@@ -1,0 +1,12 @@
+{
+  "name": "meu-curriculo",
+  "version": "1.0.0",
+  "description": "Template de currículo em HTML, CSS e JS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
