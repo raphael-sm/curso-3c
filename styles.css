@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(220,220,220);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    background-image: linear-gradient(to top, rgb(220, 220, 220), rgb(75, 197, 75));
+    padding: 8px;
+    text-align: center;
+    max-height: 110px;
+}
+
+.logoh {
+    width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+    max-width: 420px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 50%;
+    max-width: 300px;
+}
+
+.loginform {
+    display: block;
+    text-align: center;
+    top: 50%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;;
+}
+
+.lgnbtn {
+    background-color: lightgreen;
+    border: none;border-radius: 5px; 
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px
+}
