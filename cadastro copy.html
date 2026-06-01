@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Galeria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="head">
+        <table width="100%">
+            <tr>
+                <td width="33%" style="text-align: left;">
+                    <img src="hamburger.png" class="hambbutton">
+                </td>
+                <td width="33%">
+                    <img src="logoanima.png" class="logoh">
+                </td>
+                <td width="33%" id="botaoSair">
+                    <img src="logout.png" class="logoutbutton">
+                    <span>Sair</span>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <div class="gallery">
+            <form action="galeria.php" method="POST">
+                <fieldset>
+                    <div id="previewContainer" class="preview-container"></div>
+                    <div class="upload">
+                        <h2>Enviar nova Galeria</h2><br>
+                        <input type="file" accept="image/*" multiple id="imageInput"><br>
+                        <label for="sel">Selecione o Evento Associado:</label><br>
+                        <select id="sel">
+                            <option>EXEMPLO 1</option>
+                            <option>EXEMPLO 2</option>
+                            <option>EXEMPLO 3</option>
+                        </select><br>
+                        <label for="desc">Descrição(Opcional):</label><br>
+                        <textarea id="desc" cols="33" class="descfield" maxlength="600" rows="6"></textarea><br>
+                        <input type="submit" class="lgnbtn">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <script>
+            const imageInput = document.getElementById('imageInput');
+            const previewContainer = document.getElementById('previewContainer');
+            
+            imageInput.addEventListener('change', function () {
+                previewContainer.innerHTML = '';
+            
+                const files = Array.from(this.files);
+                const maxPreviews = 3;
+            
+                files.slice(0, maxPreviews).forEach(file => {
+                    const img = document.createElement('img');
+                    img.src = URL.createObjectURL(file);
+                    img.classList.add('preview-image');
+                    previewContainer.appendChild(img);
+                });
+            
+                if (files.length > maxPreviews) {
+                    const moreDiv = document.createElement('div');
+                    moreDiv.classList.add('more-images');
+                    moreDiv.textContent = `+ ${files.length - maxPreviews}`;
+                    previewContainer.appendChild(moreDiv);
+                }
+            });
+            </script>
+</body>
+</html>

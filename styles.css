@@ -1,14 +1,14 @@
 body {
     margin: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(220,220,220);
+    background-color: rgb(255, 220, 220);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .head {
-    background-image: linear-gradient(to top, rgb(220, 220, 220), rgb(75, 197, 75));
+    background-image: linear-gradient(to top, rgb(255, 220, 220), rgb(75, 197, 75));
     padding: 8px;
     text-align: center;
     max-height: 110px;
@@ -44,8 +44,63 @@ main {
 
 .lgnbtn {
     background-color: lightgreen;
-    border: none;border-radius: 5px; 
+    border: none;
+    border-radius: 5px; 
     padding: 8px;
     padding-left: 16px;
     padding-right: 16px
+}
+
+.descfield {
+    resize: none;
+}
+
+.gallery {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.logoutbutton {
+    width: 22px;
+}
+
+.hambbutton {
+    width: 40px;
+}
+
+#botaoSair {
+    text-align: right;
+    padding: 16px;
+}
+
+#botaoSair img {
+    vertical-align: middle;
+}
+
+.gallery fieldset {
+    border: none;
+    display: flex;
+}
+
+.preview-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+    padding: 16px;
+}
+
+.preview-image,
+.more-images {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.more-images {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
