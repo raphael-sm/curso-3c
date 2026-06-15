@@ -1,5 +1,10 @@
 <?php
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+var_dump($_FILES);
+var_dump($_POST);
+
 $con = mysqli_connect("localhost", "root", "", "projeto_final");
 
 $id_evento = $_POST["id_evento"];

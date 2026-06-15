@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Galeria</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="sidebar.js" defer></script>
 </head>
 <body>
+    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
     <header class="head">
         <table width="100%">
             <tr>
                 <td width="33%" style="text-align: left;">
-                    <img src="hamburger.png" class="hambbutton">
+                    <button class="hamb_button_wrapper" onclick="toggleSidebar()">
+                        <img src="hamburger.png" class="hambbutton">
+                    </button>
                 </td>
                 <td width="33%">
                     <img src="logoanima.png" class="logoh">

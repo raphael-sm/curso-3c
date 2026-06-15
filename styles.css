@@ -103,7 +103,6 @@ main {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-<<<<<<< HEAD
 }
 
 .imagecontainer2 {
@@ -133,6 +132,76 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-=======
->>>>>>> 37ef8c4f73a40f4e4e930a3f59c533aa8c27b817
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.gallery img {
+    margin: 5px;
+}
+
+.logosidebar {
+    width: 70%;
+    min-height: 30px;
+    max-height: 100px;
+    max-width: 250px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  background: white;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 90;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.sidebar a {
+  display: block;
+  padding: 14px 24px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.15s;
+  border-left: 3px solid transparent;
+}
+
+.sidebar a:hover, .sidebar a.active {
+  background: rgb(255, 240, 240);
+  border-left-color: rgb(75, 197, 75);
+  color: #2c6e2c;
+}
+
+.hamb_button_wrapper {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
 }
