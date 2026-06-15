@@ -61,7 +61,7 @@
                         <div class='imagecontainer2'>
                             <img src='". $foto['conteudos'] . "' alt='Avatar' class='image2'>
                             <div class='overlay2'>
-                                <div class='text2'>Hello World</div>
+                                <div class='text2'>Visualizar Galeria Completa</div>
                             </div>
                         </div>
                     </a>
