@@ -25,20 +25,26 @@
     </header>
     <main>
         <div class="gallery">
-            <form action="galeria.php" method="POST">
+            <form action="galeria.php" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <div id="previewContainer" class="preview-container"></div>
                     <div class="upload">
                         <h2>Enviar nova Galeria</h2><br>
-                        <input type="file" accept="image/*" multiple id="imageInput"><br>
+                        <input type="file" accept="image/*" multiple id="imageInput" name="images[]"><br>
                         <label for="sel">Selecione o Evento Associado:</label><br>
-                        <select id="sel">
-                            <option>EXEMPLO 1</option>
-                            <option>EXEMPLO 2</option>
-                            <option>EXEMPLO 3</option>
+                        <select id="sel" name="id_evento">
+                            <?php
+                                $con = mysqli_connect('localhost', 'root', '', 'projeto_final');
+                                $sql = "SELECT id_evento, nome, DATE(inicio) FROM evento";
+                                $exe = mysqli_query($con, $sql);
+                                while ($res = mysqli_fetch_array($exe)){
+                                    echo "<option value=".$res['id_evento'].">".$res['nome']."</option>";
+                                }
+                                mysqli_close($con)
+                            ?>
                         </select><br>
                         <label for="desc">Descrição(Opcional):</label><br>
-                        <textarea id="desc" cols="33" class="descfield" maxlength="600" rows="6"></textarea><br>
+                        <textarea id="desc" cols="33" class="descfield" maxlength="600" rows="6" name="descricao"></textarea><br>
                         <input type="submit" class="lgnbtn">
                     </div>
                 </fieldset>

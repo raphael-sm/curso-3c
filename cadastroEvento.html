@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Galeria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="head">
+        <table width="100%">
+            <tr>
+                <td width="33%" style="text-align: left;">
+                    <img src="hamburger.png" class="hambbutton">
+                </td>
+                <td width="33%">
+                    <img src="logoanima.png" class="logoh">
+                </td>
+                <td width="33%" id="botaoSair">
+                    <img src="logout.png" class="logoutbutton">
+                    <span>Sair</span>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <div>
+            <form action="evento.php" method="POST">
+                <fieldset>
+                        <h2>Cadastrar novo Evento</h2><br>
+                        <label for="nomeevnto">Nome:</label><br>
+                        <input type="text" maxlength="200" id="nomeevnto" name="nome"><br>
+                        <label for="data">Data do Evento:</label><br>
+                        <input type="date" id="data" name="data"><br>
+                        <label for="horario">Horário do Evento:</label><br>
+                        <input type="time" id="horario" name="horario"><br>
+                        <label for="desc">Descrição(Opcional):</label><br>
+                        <textarea cols="50" id="desc" name="descricao" maxlength="1000"></textarea><br>
+                        <label for="local">Local do Evento:</label><br>
+                        <input type="text" maxlength="400" name="localevto" id="local"><br>
+                        <input type="submit">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
