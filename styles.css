@@ -103,6 +103,7 @@ main {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+<<<<<<< HEAD
 }
 
 .imagecontainer2 {
@@ -132,4 +133,6 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+=======
+>>>>>>> 37ef8c4f73a40f4e4e930a3f59c533aa8c27b817
 }
