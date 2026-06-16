@@ -9,26 +9,11 @@
 </head>
 <body>
     <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
-    <header class="head">
-        <table width="100%">
-            <tr>
-                <td width="33%" style="text-align: left;">
-                    <button class="hamb_button_wrapper" onclick="toggleSidebar()">
-                        <img src="hamburger.png" class="hambbutton">
-                    </button>
-                </td>
-                <td width="33%">
-                    <img src="logoanima.png" class="logoh">
-                </td>
-                <td width="33%" id="botaoSair">
-                    <img src="logout.png" class="logoutbutton">
-                    <span>Sair</span>
-                </td>
-            </tr>
-        </table>
-    </header>
+    <?php
+        include __DIR__ . '\snippets\header.html'
+    ?>
     <main>
-        <div class="gallery">
+        <div class="gridgallery">
         <?php
 
                 $con = mysqli_connect("localhost", "root", "", "projeto_final");
@@ -36,7 +21,7 @@
                 $eventos = mysqli_query($con, "SELECT id_evento, nome, DATE_FORMAT(inicio, '%d/%m/%Y') AS inicio, descricao, local_evento FROM evento");
 
                 while ($evento = mysqli_fetch_assoc($eventos)) {
-
+                    echo "<div class='gridgallerycell'>";
                     echo "<h1>" . $evento["nome"] . "</h1>";
                     echo "<h3>" . $evento["inicio"] . "</h3>";
                     echo "<p style='display: flex; align-content: center'> <img src='mappin.png' style='height: 1em'>" . $evento["local_evento"] . "</p>";
@@ -62,8 +47,8 @@
                         </div>
                     </a>
                     ";
-
-                    echo "<hr>";
+                    
+                    echo "</div>";
                 }
 
                 mysqli_close($con);

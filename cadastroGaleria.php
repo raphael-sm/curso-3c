@@ -9,24 +9,9 @@
 </head>
 <body>
     <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
-    <header class="head">
-        <table width="100%">
-            <tr>
-                <td width="33%" style="text-align: left;">
-                    <button class="hamb_button_wrapper" onclick="toggleSidebar()">
-                        <img src="hamburger.png" class="hambbutton">
-                    </button>
-                </td>
-                <td width="33%">
-                    <img src="logoanima.png" class="logoh">
-                </td>
-                <td width="33%" id="botaoSair">
-                    <img src="logout.png" class="logoutbutton">
-                    <span>Sair</span>
-                </td>
-            </tr>
-        </table>
-    </header>
+    <?php
+        include __DIR__ . '\snippets\header.html'
+    ?>
     <main>
         <div class="gallery">
             <form action="galeria.php" method="POST" enctype="multipart/form-data">
