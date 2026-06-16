@@ -1,3 +1,6 @@
+CREATE DATABASE projeto_final;
+USE projeto_final;
+
 CREATE TABLE evento(
     id_evento INT PRIMARY KEY AUTO_INCREMENT,
     inicio DATETIME,
