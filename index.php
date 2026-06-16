@@ -13,7 +13,6 @@
         include __DIR__ . '\snippets\header.html'
     ?>
     <main>
-        
     </main>
 </body>
 </html>
