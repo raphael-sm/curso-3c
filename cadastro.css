@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #22C55E;
+    /*--secondary-color: #EF4444;*/
+    --secondary-color: #D3D0CB;
+    --primary-gradient: linear-gradient(
+        to bottom,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+}
+
+.titulo-cadastro h2::before {
+    content: "\1F464"; /* Código do símbolo */
+    margin-right: 10px; /* Espaço entre o símbolo e a palavra Cadastro */
+    font-size: 1.1em; /* Ajusta o tamanho do símbolo se necessário */
+    vertical-align: middle; /* Alinha o símbolo na mesma linha do texto */
+}
+
+html {
+    min-height: 100%;
+    background: var(--primary-gradient);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+}
+.head {
+    background: transparent;
+    padding: 8px;
+    text-align: center;
+    max-height: 110px;
+    font-family:montserrat, sans-serif;
+}
+.logoh {
+    width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+    max-width: 420px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+h2{
+    align-items: left;
+    padding-left: 2%;
+    padding-bottom: 7%;
+}
+.login {
+    border: #679436 solid 5px;
+    background-color:#6ab547;
+    border-radius: 25px;
+    padding: 30px;
+    width: 20%;
+    min-width: 320px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    padding: 40px;
+
+}
+.loginform input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #0a0101;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+.lgnbtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.descfield {
+    resize: none;
+}
+
+.gallery {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.logoutbutton {
+    width: 22px;
+}
+
+.hambbutton {
+    width: 40px;
+}
+
+#botaoSair {
+    text-align: right;
+    padding: 16px;
+}
+#botaoSair img {
+    vertical-align: middle;
+}
+.gallery fieldset {
+    border: none;
+    display: flex;
+}
+.preview-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+    padding: 16px;
+}
+.preview-image,
+.more-images {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.more-images {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.login:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+.loginform input:focus {
+    border-color: #1B5E20;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+    outline: none;
+}
+.imput-group i{
+    position: relative;
+    left: 15px;
+    top: 50%;
+    transform: translateY(200%);
+}
+.imput-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border:none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
