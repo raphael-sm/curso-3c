@@ -1,17 +1,18 @@
 body {
     margin: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(255, 220, 220);
+    background-color: rgb(220, 220, 220);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .head {
-    background-image: linear-gradient(to top, rgb(255, 220, 220), rgb(75, 197, 75));
+    background-color: rgb(14, 218, 14);
     padding: 8px;
     text-align: center;
     max-height: 110px;
+    margin-bottom: 25px;
 }
 
 .logoh {
@@ -58,6 +59,18 @@ main {
 .gallery {
     background-color: white;
     border-radius: 10px;
+}
+
+.gridgallery {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 16px;
+}
+
+.gridgallerycell {
+    padding: 10px;
 }
 
 .logoutbutton {

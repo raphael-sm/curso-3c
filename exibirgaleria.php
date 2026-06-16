@@ -13,7 +13,7 @@
         include __DIR__ . '\snippets\header.html'
     ?>
     <main>
-        <div class="gallery">
+        <div class="gridgallery">
         <?php
 
                 $con = mysqli_connect("localhost", "root", "", "projeto_final");
@@ -21,7 +21,7 @@
                 $eventos = mysqli_query($con, "SELECT id_evento, nome, DATE_FORMAT(inicio, '%d/%m/%Y') AS inicio, descricao, local_evento FROM evento");
 
                 while ($evento = mysqli_fetch_assoc($eventos)) {
-
+                    echo "<div class='gridgallerycell'>";
                     echo "<h1>" . $evento["nome"] . "</h1>";
                     echo "<h3>" . $evento["inicio"] . "</h3>";
                     echo "<p style='display: flex; align-content: center'> <img src='mappin.png' style='height: 1em'>" . $evento["local_evento"] . "</p>";
@@ -47,8 +47,8 @@
                         </div>
                     </a>
                     ";
-
-                    echo "<hr>";
+                    
+                    echo "</div>";
                 }
 
                 mysqli_close($con);
