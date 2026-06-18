@@ -21,6 +21,8 @@ body {
     max-height: 110px;
     margin-bottom: 25px;
     z-index: 99999;
+    position: sticky;
+    top: 0;
 }
 
 .foot {
@@ -39,6 +41,8 @@ body {
     text-align: center;
     max-height: 110px;
     z-index: 99999;
+    position: sticky;
+    top: 0;
 }
 
 .logoh {

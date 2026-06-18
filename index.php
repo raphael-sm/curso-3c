@@ -8,9 +8,9 @@
     <script src="sidebar.js" defer></script>
 </head>
 <body>
-<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
     <?php
-        include __DIR__ . '\snippets\header.html'
+        include __DIR__ . '/snippets/header.html';
+        include __DIR__ . '/snippets/sidebar.html';
     ?>
     <script>
         document.getElementById('TheHead').className="headIndex"
@@ -44,7 +44,7 @@
         <div class="tres">&nbsp;</div>
     </div>
     <?php
-        include __DIR__ . '\snippets\footer.html'
+        include __DIR__ . '/snippets/footer.html'
     ?>
 </body>
 </html>

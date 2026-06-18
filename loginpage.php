@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
-    <?php
-        include __DIR__ . '\snippets\header.html'
+    <?php   
+        include __DIR__ . '/snippets/header.html';
+        include __DIR__ . '/snippets/sidebar.html';
     ?>
     <main>
         <div class="login">
