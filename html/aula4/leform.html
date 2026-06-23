@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário misto</title>
+</head>
+<body>
+    <form action="naoexisto.php">
+        <input type="date"><br><br>
+        <input type="file"><br><br>
+        <input type="checkbox"><label>Aceito os termos de serviço.</label><br><br>
+        <input type="radio" name="sexo"><label>Masculino</label><br>
+        <input type="radio" name="sexo"><label>Feminino</label><br><br>
+        <textarea rows="4" cols="30" maxlength="200" placeholder="Escreva Sua Mensagem..."></textarea><br><br>
+        <label>Selecione um gênero musical:</label>
+        <select name="genero">
+            <option>Selecione...</option>
+            <option>Rock</option>
+            <option>Pop</option>
+            <option>Rap</option>
+            <option>Sertanejo</option>
+        </select><br><br>
+        <audio src="musica.mp3" controls></audio>
+        <video src="video.mp4" controls width="300"></video><br><br>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/B37gTJicY1I?si=5vT4MoSdSl0xubMb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- pra mim ele retorna erro 153. GGs se funcionar. Se não, não sei por que não funciona. -->
+    </form>
+</body>
+</html>
