@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(255, 255, 200);
+}
+
+a {
+    color: blue;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+a:hover {
+    transition: 0.2s color;
+    color: navy
+}
+
+form input:focus {
+    border: 3px solid cyan;
+}
+
+form input:focus-visible {
+    box-shadow: 0 0 2px 4px blue;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child{
+    color: purple;
+}
+
+.quadrado {
+    background-color: blue;
+    transition: background 0.4s ease;
+}
+
+.quadrado:hover{
+    background-color: black;
+}
+
+.transicaomassa{
+    background-color: cyan;
+    transition: all 0.3s ease-in-out;
+}
+
+.transicaomassa:hover{
+    background-color: rgb(0, 107, 107);
+    opacity: 0.5;
+    transform: scale(1.08);
+}
+
+.direita {
+    background-color: red;
+}
+
+.esquerda{
+    background-color: lime;
+}
+
+.direita:hover{
+    transform: translateX(20px);
+}
+
+.esquerda:hover{
+    transform: translateY(20px);
+}
+
+button {
+    background-color: aliceblue;
+    transition: 0.3s all ease-in-out;
+}
+
+button:hover{
+    background-color: skyblue;
+    transform: scale(1.05) rotate(2deg);
+}
+
+.bloco {
+    background-color: red;
+    transition: 0.5s background;
+}
+
+.bloco:hover{
+    background-color: orange;
+}
+
+.ts1 {
+    transition-timing-function: ease;
+}
+
+.ts2 {
+    transition-timing-function: linear;
+}
+
+.ts3 {
+    transition-timing-function: ease-in-out;
+}
+
+.teste {
+    background-color: purple;
+    animation: mover 1s ease 0 infinite normal forwards;
+}
+
+@keyframes mover {
+    from {
+        transform: translate(0px,0px);
+    } to {
+        transform: translate(50vw, 50vh)
+    }
+}
