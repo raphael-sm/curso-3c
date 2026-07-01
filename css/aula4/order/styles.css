@@ -1,0 +1,39 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+}
+
+.cx1 {
+    background-color: lightcoral;
+    order: 2;
+}
+
+.cx2 {
+    background-color: lightgreen;
+    order: 3;
+}
+
+.cx3 {
+    background-color: lightsalmon;
+    order: 1;
+}
+
+.cx4 {
+    background-color: lightseagreen;
+    order: 4;
+}

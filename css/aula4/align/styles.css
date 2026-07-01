@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 100px;
+    background-color: red;
+}
+
+.c1 {
+    height: 150px;
+}
+
+.c2 {
+    height: 450px;
+}
+
+.c3 {
+    height: 50px;
+    align-self: end;
+}
+
+.c4 {
+    height: 250px;
+}

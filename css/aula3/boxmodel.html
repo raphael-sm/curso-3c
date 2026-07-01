@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>BOXMODEL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fundovarios cabecalho">
+        Windows 10
+    </header>
+    <div class="caixa caixateste"></div>
+    <!-- não sei se podia usar flexbox, mas nao sabia de outro metodo para deixar elementos lado a lado -->
+    <div class="flexcontainer">
+        <div class="caixa teste1">Contentbox</div>
+        <div class="caixa teste2">Borderbox</div>
+    </div>
+    <p>O Content-box prioriza o conteúdo dentro do elemento(tamanho disp. para conteúdo) sobre o tamanho do elemento.</p>
+    <p>O border-box prioriza o tamanho do elemento(tamanho da caixa total, sem considerar margem).</p>
+    <div class="flexcontainer">
+        <div class="caixa sombreado1">2d</div>
+        <div class="caixa sombreado2">2d</div>
+        <div class="caixa sombreado3">2d</div>
+        <div class="caixa sombreado4">2d</div>
+        <div class="caixa sombreado5">3d</div>
+        <div class="caixa sombreado6">3d</div>
+        <div class="caixa sombreado7">3d</div>
+        <div class="caixa sombreado8">3d</div>
+    </div><br>
+    <div class="caixaG fundo1">texto</div>
+    <br><input type="checkbox" id="check"><label id="contain">Contain</label><label id="cover">Cover</label>
+    <div class="caixaG fundo2">texto</div>
+    <p>O Cover tenta cobrir o elemento com a imagem de fundo, cortando a imagem.</p>
+    <p>O Contain deixa a imagem toda dentro do elemento, sem cortá-la, resultando em espaços vazios.</p>
+    <p>Qual é melhor depende da sua necessidade, mas geralmente, o cover é preferido.</p>
+    <div class="caixaG fundovarios"></div>
+    <h2 class="subtitulo" id="subtit">TITULO MUDA DE COR</h2>
+    <p>O navegador FIREFOX priorizou o ID, e o mesmo deve se aplicar a outros navegadores.</p>
+</body>
+</html>

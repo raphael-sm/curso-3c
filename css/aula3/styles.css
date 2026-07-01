@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Segoe UI New';
+  src: url('Segoe\ UI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text during loading */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+.caixaG {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    padding: 8px;
+}
+
+.caixateste {
+    width: 200px;
+    background-color: skyblue;
+    padding: 30px;
+    border: 7px dotted;
+    border-color: blue;
+    margin: 15px;
+}
+
+.teste1 {
+    padding: 8px;
+    border: 5px black solid;
+    box-sizing: content-box;
+}
+
+.teste2 {
+    padding: 8px;
+    border: 5px black solid;
+    box-sizing: border-box;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.sombreado1 {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border: 8px black solid;
+}
+
+.sombreado2 {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,1);
+    border: 8px black double;
+}
+
+.sombreado3 {
+    border-radius: 10px;
+    box-shadow: 7px 7px 3px rgba(0,0,0,0.8);
+    border: 8px black dashed;
+}
+
+.sombreado4 {
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgba(255, 0, 0, 0.7);
+    border: 8px black dotted;
+}
+
+.sombreado5 {
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px rgba(167, 0, 0, 1);
+    border: 8px black groove;
+}
+
+.sombreado6 {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
+    border: 8px black inset;
+}
+
+.sombreado7 {
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 255, 136, 0.3);
+    border: 8px black outset;
+}
+
+.sombreado8 {
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,1);
+    border: 8px black ridge;
+}
+
+.fundo1 {
+    background-color: darkcyan;
+    color: white;
+}
+
+.fundo2 {
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#check:checked ~ .fundo2 {
+  background-size: contain;
+}
+
+#cover {
+    display: inline;
+}
+
+#contain {
+    display: none;
+}
+
+#check:checked ~ #cover {
+  display: none;
+}
+
+#check:checked ~ #contain {
+  display: inline;
+}
+
+.fundovarios {
+    background: linear-gradient(rgba(255, 0, 0, 0.65), rgba(255, 153, 0, 0.65)), url(images.jpeg) right/cover no-repeat;
+}
+
+.cabecalho {
+    font-family: 'Segoe UI New';
+    color: white;
+    font-size: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: lime;
+}
+
+.subtitulo {
+    color: green;
+}
+
+#subtit {
+    color: darkgreen
+}

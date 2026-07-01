@@ -101,13 +101,15 @@ button:hover{
 
 .teste {
     background-color: purple;
-    animation: mover 1s ease 0 infinite normal forwards;
+    animation: fadeUp 0.4s ease-out forwards;
 }
 
-@keyframes mover {
+@keyframes fadeUp {
     from {
-        transform: translate(0px,0px);
+        opacity: 0;
+        transform: translateY(16px);
     } to {
-        transform: translate(50vw, 50vh)
+        opacity: 1;
+        transform: translateY(0);
     }
 }
