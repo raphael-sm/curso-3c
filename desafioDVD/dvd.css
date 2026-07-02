@@ -1,0 +1,102 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-family: Arial;
+}
+
+.logo {
+    width: 70px;
+    height: 55px;
+    display: flex;
+    color: red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(calc(50vw - 35px), calc(50vh - 27.5px));
+    animation: dvd 25s linear infinite
+}
+
+.logo h1, h4 {
+    text-shadow: 0 4px 10px;
+}
+
+@keyframes dvd {
+    0%, 100% {
+        transform: translate(calc(100vw - 70px), calc(100vh - 55px));
+        color: red;
+    }
+    9% {
+        color: red;
+    }
+    10% {
+        transform: translate(0vw, 0vh);
+        color: lightcoral;
+    }
+    19% {
+        color: lightcoral;
+    }
+    20% {
+        transform: translate(35vw, calc(100vh - 55px));
+        color: lightseagreen;
+    }
+    29% {
+        color: lightseagreen;
+    }
+    30% {
+        transform: translate(calc(75vw - 35px), 0vh);
+        color: lime;
+    }
+    39% {
+        color: lime;
+    }
+    40% {
+        transform: translate(calc(100vw - 70px), calc(50vh - 27.5px));
+        color: indigo;
+    }
+    49% {
+        color: indigo
+    }
+    50% {
+        transform: translate(calc(75vw - 35px), calc(100vh - 55px));
+        color: khaki;
+    }
+    59% {
+        color: khaki;
+    }
+    60% {
+        transform: translate(calc(25vw - 35px), 0vh);
+        color: hotpink;
+    }
+    69% {
+        color: hotpink;
+    }
+    70% {
+        transform: translate(0vw, calc(50vh - 27.5px));
+        color: honeydew;
+    }
+    79% {
+        color: honeydew;
+    }
+    80% {
+        transform: translate(calc(55vw - 35px), calc(100vh - 55px));
+        color: cadetblue;
+    }
+    89% {
+        color: cadetblue;
+    }
+    90% {
+        transform: translate(calc(75vw - 35px), 0vh);
+        color: brown;
+    }
+    99% {
+        color: brown;
+    }
+}
