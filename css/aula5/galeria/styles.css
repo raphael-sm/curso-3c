@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "cabecalho"
+    "conteudo";
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+}
+
+header {
+    grid-area: cabecalho;
+    background-color: limegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo {
+    width: 300px;
+    height: auto;
+}

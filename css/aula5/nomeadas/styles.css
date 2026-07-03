@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "cabecalho cabecalho"
+    "menu conteudo"
+    "rodape rodape";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 70% 15%;
+}
+
+.cabecalho {
+    background-color: darkgreen;
+    grid-area: cabecalho;
+}
+
+.menu {
+    background-color: yellow;
+    grid-area: menu;
+}
+
+.conteudo {
+    background-color: hotpink;
+    grid-area: conteudo;
+}
+
+.rodape {
+    background-color: skyblue;
+    grid-area: rodape;
+}
