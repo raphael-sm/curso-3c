@@ -16,6 +16,7 @@ body {
     grid-template-rows: 8% 92%;
     font-family: Arial;
     color: white;
+    overflow: hidden;
 }
 
 header {
@@ -275,4 +276,70 @@ main {
     font-weight: bold;
     background-color: black;
     border: 2px white solid;
+}
+
+.musicas {
+    background-color: #000;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+
+.cantores {
+    background-color: #000;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+
+
+.gridmusicas {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.musica {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.coverart {
+    margin-bottom: 8px;
+    height: 175px;
+    aspect-ratio: 1;
+    border-radius: 15px;
+}
+
+.author {
+    padding-top: 8px;
+    color: darkgray;
+}
+
+.warning {
+    background-color: gray;
+    color: black;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.cantor {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.cantor_foto {
+    margin-bottom: 8px;
+    height: 175px;
+    aspect-ratio: 1;
+    border-radius: 50%;
 }
