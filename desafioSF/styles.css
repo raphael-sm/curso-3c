@@ -22,14 +22,20 @@ body {
 header {
     background-color: black;
     grid-area: header;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "esq meio dir";
+    grid-template-columns: 1fr 3fr 2fr;
+    justify-content: center;
+    align-items: start;
 }
 
 aside {
     background-color: black;
     grid-area: menu;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
 }
 
 main {
@@ -52,7 +58,8 @@ main {
 
 .iconS {
     height: 16px;
-    aspect-ratio: 1; 
+    aspect-ratio: 1;
+    display: inline;
 }
 
 .icon:hover {
@@ -70,40 +77,48 @@ main {
 /* cabeçalho */
 
 .esq {
-    display: flex;
-    height: 100%;
-    width: 10%;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     padding-left: 10px;
+    grid-area: esq;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
     justify-content: left;
 }
 
 .meio {
-    display: flex;
-    height: 100%;
-    width: 40%;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-area: meio;
+    align-items: start;
+    padding-top: 10px;
     padding-left: 10px;
     justify-content: left;
 }
 
 .dir {
-    display: flex;
-    height: 100%;
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     justify-content: right;
     align-items: center;
+    grid-area: dir;
+    height: 50%;
 }
 
 .pesquisa {
-    height: 80%;
+    height: 60%;
     width: 85%;
     border-radius: 500px;
     background-color: #000000;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 15fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    align-items: start;
+    padding-left: 1%;
+    padding-top: 0.2%;
     border: 1px rgb(51, 51, 51) solid;
     transition: 0.4s ease-in-out;
 }
@@ -113,8 +128,11 @@ main {
 .pesquisa:focus-within {
     border: 2px rgb(255, 255, 255) solid;
 }
+.pesquisa .iconwrapper {
+    height: 65%;
+}
 .pesquisa input {
-    height: 100%;
+    height: 55%;
     background-color: rgba(0,0,0,0);
     color: white;
     font-size: 16px;
@@ -129,9 +147,10 @@ main {
 .hoverlink {
     color: white;
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    white-space: nowrap;
     align-items: center;
     font-weight: bold;
     opacity: 0.5;
@@ -139,7 +158,8 @@ main {
 
 .separator {
     width: 2px;
-    height: 50%;
+    height: 45%;
+    margin-top: 4px;
     background-color: white;
 }
 
@@ -150,7 +170,7 @@ main {
 }
 
 .lgnbtn {
-    height: 80%;
+    height: 60%;
     border-radius: 500px;
     padding-left: 24px;
     padding-right: 24px;
@@ -162,7 +182,7 @@ main {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
-    display: flex;
+    display: grid;
     align-items: center;
     font-weight: bold;
 }
@@ -178,9 +198,10 @@ main {
 .titulo {
     width: 100%;
     height: 10%;
-    display: flex;
+    display: grid;
     padding-left: 15px;
     padding-right: 25px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
@@ -193,7 +214,8 @@ main {
     background-color: black;
     color: white;
     font-weight: bold;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
@@ -210,13 +232,11 @@ main {
     margin-top: 40px;
     margin-bottom: 110px;
     height: 275px;
-    align-self: flex-start;
 }
 
 .secao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-items: start;
     align-items: start;
     gap: 15px;
     width: 100%;
@@ -236,7 +256,7 @@ main {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
-    display: flex;
+    display: grid;
     align-items: center;
     font-weight: bold;
 }
@@ -250,13 +270,13 @@ main {
 .links {
     width: 100%;
     height: fit-content;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 15px;
     padding-right: 25px;
-    flex-wrap: wrap;
     gap: 10px;
     font-size: 14px;
-    align-self: flex-end;
+    align-self: end;
 }
 
 .links a {
@@ -303,8 +323,8 @@ main {
 
 .musica {
     height: 90%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: (auto-fit, 1fr);
     padding: 8px;
 }
 
@@ -332,8 +352,8 @@ main {
 
 .cantor {
     height: 90%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
     padding: 8px;
 }
 
