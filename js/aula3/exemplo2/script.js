@@ -75,5 +75,4 @@ btn.addEventListener("click", function() {
         li.remove()
     })
     li.append(btnRem)
-    lista.append(li)
 })
