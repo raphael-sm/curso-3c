@@ -1,0 +1,25 @@
+:root {
+    color-scheme: light dark;
+    --bg-color: light-dark(rgb(255,255,255), rgb(0,0,0))
+    --text-color: light-dark(rgb(0,0,0),rgb(255,255,255))
+}
+
+:root.claro{
+    color-scheme: light;
+}
+
+:root.escuro{
+    color-scheme: dark;
+}
+
+h1 {
+    color: var(--text-color)
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+p {
+    color: var(--text-color)
+}
