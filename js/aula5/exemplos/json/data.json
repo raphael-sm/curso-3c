@@ -1,0 +1,23 @@
+[
+    {
+        "nome": "Reginaldo",
+        "idade": 18,
+        "habilidades": ["PHP", "Java", "Stack HCJ"],
+        "veiculo": "Fiat 147",
+        "foto_veiculo": "https://autosorfaos.wordpress.com/wp-content/uploads/2010/10/fiat-147-bege.jpg"
+    },
+    {
+        "nome": "João",
+        "idade": 20,
+        "habilidades": ["Node.js", "SQL"],
+        "veiculo": "Carro do bad piggies",
+        "foto_veiculo": "https://i.pinimg.com/474x/da/47/4e/da474e010f1965499dd5f11043ac28be.jpg"
+    },
+    {
+        "nome": "Ricardo",
+        "idade": 38,
+        "habilidades": ["Assembly", "C/C++/C#", "Bash"],
+        "veiculo": "Kombi Gambiarra",
+        "foto_veiculo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcLiF4VPlV8Ijk_MipVpI1s_kRi651mA5P36m9AeukNuSCZ3X4-glZ-JV&s=10"
+    }
+]
