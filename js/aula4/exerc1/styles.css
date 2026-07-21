@@ -1,0 +1,9 @@
+.tema_claro {
+    background-color: white;
+    color: black;
+}
+
+.tema_escuro {
+    background-color: black;
+    color: white
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "nome": "sofia",
+        "idade": 19,
+        "habilidades": ["php", "mysql", "linux"],
+        "ativo": true
+    },
+    {
+        "nome": "nicole",
+        "idade": 27,
+        "habilidades": ["node.js", "express.js", "react.js", "mongodb"],
+        "ativo": true
+    },
+    {
+        "nome": "beatriz",
+        "idade": 21,
+        "habilidades": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+        "ativo": true
+    }
+]
